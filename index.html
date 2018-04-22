@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>图片轮播</title>
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<div id="test1" class="m-carousel">
+		<div class="m-carousel-items"><!--
+			--><img class="m-carousel-img" src="image/1.jpg" alt="1"/><!--
+			--><img class="m-carousel-img" src="image/2.jpg" alt="2"/><!--
+			--><img class="m-carousel-img" src="image/3.jpg" alt="3"/><!--
+			--><img class="m-carousel-img" src="image/4.jpg" alt="4"/><!--
+			--><img class="m-carousel-img" src="image/5.jpg" alt="5"/><!--
+	--></div>
+		<div class="m-carousel-prev">&lt;</div>
+		<div class="m-carousel-next">&gt;</div>
+		<ul class="m-carousel-indicators">
+			<li>0</li>
+			<li>1</li>
+			<li>2</li>
+			<li>3</li>
+			<li>4</li>
+		</ul>
+	</div>
+	<div id="test2" class="m-carousel">
+		<div class="m-carousel-items"><!--
+			--><img class="m-carousel-img" src="image/1.jpg" alt="1"/><!--
+			--><img class="m-carousel-img" src="image/2.jpg" alt="2"/><!--
+			--><img class="m-carousel-img" src="image/3.jpg" alt="3"/><!--
+	--></div>
+		<div class="m-carousel-prev">&lt;</div>
+		<div class="m-carousel-next">&gt;</div>
+		<ul class="m-carousel-indicators"></ul>
+	</div>
+
+	<button id="start">start</button>
+	<button id="stop">stop</button>
+
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/jquery-plugin-scroll.js"></script>
+	<script type="text/javascript" src="js/slider.js"></script>
+	<script type="text/javascript">
+		$(function(){ 
+			var test1 = $('#test2').slider();
+			// var test2 = $('#test2').slider({
+             //    speed: 2000
+			// });
+
+			//on方法传入回调函数，参数'slid'：滚动前触发；参数'slide'：滚动后触发
+			/*test.on('slide', function(){
+				alert('callback');
+			});*/
+
+
+		});
+	</script>
+</body>
+</html>

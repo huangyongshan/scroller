@@ -1,0 +1,59 @@
+/*轮播容器*/
+.m-carousel{ 
+	width: 640px;
+	height: 300px;
+	position: relative;
+	overflow: hidden;
+}
+/*轮播图片定位器*/
+.m-carousel-items{ 
+	white-space: nowrap;
+	overflow: hidden;
+	font-size: 0;
+	position: absolute;
+}
+.m-carousel-items img{ 
+	display: inline-block;*display: inline;*zoom: 1;
+}
+/*箭头*/
+.m-carousel-prev, .m-carousel-next{ 
+	position: absolute;
+	top: 0;
+	line-height: 300px;
+	font-size: 30px;
+	color: #fff;
+	cursor: pointer;
+	display: none;
+}
+.m-carousel:hover .m-carousel-prev,.m-carousel:hover .m-carousel-next{ 
+	display: block;
+}
+.m-carousel-prev{ 
+	left: 0;
+}
+.m-carousel-next{ 
+	right: 0;
+}
+/*图片圆点序号*/
+.m-carousel-indicators{ 
+	width: 100%;
+	overflow: hidden;
+	position: absolute;
+	bottom: 10px;
+	zoom: 1;
+	text-align: center;
+}
+.m-carousel-indicators li{ 
+	display: inline-block;*display: inline;*zoom: 1;
+	text-align: center;
+	margin: 0 4px;
+	width: 20px;
+	height: 20px;
+	background: url(../image/circle.png) no-repeat 0 0;
+	opacity: 0.8;
+	font-size: 0;
+	cursor: pointer;
+}
+.m-carousel-indicators li.z-active{ 
+	background: url(../image/circle.png) no-repeat 0 -24px;
+}
